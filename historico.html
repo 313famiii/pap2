@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico</title>
+    <link rel="stylesheet" href="styles3.css"><!--LIgação ao ficheiro css-->
+</head>
+<body>
+    <nav class="navbar"> <!--cria uma navbar-->
+        <div class="logo">
+            <a href="index.html"><img src="booksdiscovery.png" alt="Logo" class="logo"></a><!--logotipo do website que vai redirecionar á página principal-->
+        </div>
+        <div class="nav-links">
+            <ul class="navbar-nav">
+                <li class=""><a href="index.html">Página Inicial</a></li><!--Volta á pagina inicial do site-->
+                <li class=""><a href="sugestões.html">Sugestões</a></li><!--Abre uma pagina sobre as sugestões do site-->
+                <li class=""><a href="pnl.html">Ver PNL</a></li><!--Abre uma página para ver o plano nacional de leitura-->
+                <li class=""><a href="sobre.html">Sobre</a></li><!--Abre uma pagina sobre as informações do site-->
+            </ul>    
+        </div>    
+    </nav>
+    <div class="container">
+        <h1>Histórico de Pesquisas</h1>
+
+        <!-- Caixa para exibir os resultados do histórico -->
+        <div id="historyBox">
+            <!-- Lista do histórico de pesquisas -->
+            <ul id="historyList">
+                <!-- A lista é gerada com javascript -->
+            </ul>
+        </div>
+
+        <!-- Botão para apagar o histórico -->
+        <div class="buttons-container">
+            <button onclick="clearHistory()">Apagar Histórico</button>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script><!--Ligação a bibloteca javascript jquery(serve para criar elementos HTML-->
+    <script src="historico.js"></script><!--Ligação ao ficheiro javascript-->
+</body>
+</html>
